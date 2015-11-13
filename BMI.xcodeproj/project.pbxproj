@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		64D5312F1BF4F127000E8650 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D5312E1BF4F127000E8650 /* AppDelegate.swift */; };
 		64D531311BF4F127000E8650 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D531301BF4F127000E8650 /* ViewController.swift */; };
-		64D531341BF4F127000E8650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D531321BF4F127000E8650 /* Main.storyboard */; };
 		64D531361BF4F127000E8650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64D531351BF4F127000E8650 /* Assets.xcassets */; };
 		64D531391BF4F127000E8650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D531371BF4F127000E8650 /* LaunchScreen.storyboard */; };
 		64D531441BF4F128000E8650 /* BMITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D531431BF4F128000E8650 /* BMITests.swift */; };
 		64D5314F1BF4F128000E8650 /* BMIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D5314E1BF4F128000E8650 /* BMIUITests.swift */; };
+		64D5315D1BF50818000E8650 /* BMICalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D5315C1BF50818000E8650 /* BMICalculatorViewController.swift */; };
+		64D5315F1BF530D3000E8650 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D5315E1BF530D3000E8650 /* InformationViewController.swift */; };
+		64D531611BF618E6000E8650 /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D531601BF618E6000E8650 /* BMIViewController.swift */; };
+		64D531641BF63DD0000E8650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64D531621BF63DD0000E8650 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 		64D5312B1BF4F127000E8650 /* BMI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D5312E1BF4F127000E8650 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64D531301BF4F127000E8650 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		64D531331BF4F127000E8650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64D531351BF4F127000E8650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64D531381BF4F127000E8650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64D5313A1BF4F128000E8650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		64D5314A1BF4F128000E8650 /* BMIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D5314E1BF4F128000E8650 /* BMIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIUITests.swift; sourceTree = "<group>"; };
 		64D531501BF4F128000E8650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64D5315C1BF50818000E8650 /* BMICalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMICalculatorViewController.swift; sourceTree = "<group>"; };
+		64D5315E1BF530D3000E8650 /* InformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		64D531601BF618E6000E8650 /* BMIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
+		64D531631BF63DD0000E8650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +103,12 @@
 		64D5312D1BF4F127000E8650 /* BMI */ = {
 			isa = PBXGroup;
 			children = (
+				64D531621BF63DD0000E8650 /* Main.storyboard */,
 				64D5312E1BF4F127000E8650 /* AppDelegate.swift */,
 				64D531301BF4F127000E8650 /* ViewController.swift */,
-				64D531321BF4F127000E8650 /* Main.storyboard */,
+				64D5315C1BF50818000E8650 /* BMICalculatorViewController.swift */,
+				64D531601BF618E6000E8650 /* BMIViewController.swift */,
+				64D5315E1BF530D3000E8650 /* InformationViewController.swift */,
 				64D531351BF4F127000E8650 /* Assets.xcassets */,
 				64D531371BF4F127000E8650 /* LaunchScreen.storyboard */,
 				64D5313A1BF4F128000E8650 /* Info.plist */,
@@ -229,9 +238,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D531641BF63DD0000E8650 /* Main.storyboard in Resources */,
 				64D531391BF4F127000E8650 /* LaunchScreen.storyboard in Resources */,
 				64D531361BF4F127000E8650 /* Assets.xcassets in Resources */,
-				64D531341BF4F127000E8650 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +266,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				64D531311BF4F127000E8650 /* ViewController.swift in Sources */,
+				64D5315D1BF50818000E8650 /* BMICalculatorViewController.swift in Sources */,
 				64D5312F1BF4F127000E8650 /* AppDelegate.swift in Sources */,
+				64D531611BF618E6000E8650 /* BMIViewController.swift in Sources */,
+				64D5315F1BF530D3000E8650 /* InformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,20 +305,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		64D531321BF4F127000E8650 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64D531331BF4F127000E8650 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		64D531371BF4F127000E8650 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				64D531381BF4F127000E8650 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		64D531621BF63DD0000E8650 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64D531631BF63DD0000E8650 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -397,10 +409,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Elias.BMI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BMI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Elias.BMI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
