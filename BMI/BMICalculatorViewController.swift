@@ -25,7 +25,8 @@ class BMICalculatorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
     }
 
@@ -34,6 +35,9 @@ class BMICalculatorViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     @IBAction func WhatSex(sender: AnyObject) {
         let index : Int = ManOrWife.selectedSegmentIndex
@@ -93,13 +97,22 @@ class BMICalculatorViewController: UIViewController {
        
         }
     
+    @IBAction func DismissKeyboard(sender: AnyObject) {
+        self.resignFirstResponder()
+    }
+    
+    @IBAction func DismissKeyboardtwo(sender: AnyObject) {
+        self.resignFirstResponder()
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let DestinationViewController : BMIViewController = segue.destinationViewController as! BMIViewController
+        
         
         DestinationViewController.LabelHeightText = HeigthText.text!
         DestinationViewController.LabelLengthText = LengthText.text!
         DestinationViewController.LabelBmiText = BMiNumber.text!
     }
     
+
 }
