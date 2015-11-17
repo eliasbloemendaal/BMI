@@ -106,12 +106,15 @@ class BMICalculatorViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.destinationViewController as? BMIViewController) == nil {
+            return
+        }
+        else{
         let DestinationViewController : BMIViewController = segue.destinationViewController as! BMIViewController
-        
-        
         DestinationViewController.LabelHeightText = HeigthText.text!
         DestinationViewController.LabelLengthText = LengthText.text!
         DestinationViewController.LabelBmiText = BMiNumber.text!
+        }
     }
     
 
